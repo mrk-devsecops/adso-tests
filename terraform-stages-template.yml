@@ -50,7 +50,7 @@ stages:
         TerraformDirectory: terraform
         environment: ${{ parameters.environment }}
 
-    - template: ../infrastructure/terraform-outputs-template.yml
+    - template: ./infrastructure/terraform-outputs-template.yml
       parameters:
         TerraformDirectory: 101-terraform-job/terraform
 
